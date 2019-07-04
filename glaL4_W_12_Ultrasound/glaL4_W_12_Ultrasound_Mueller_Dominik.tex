@@ -1,0 +1,62 @@
+\documentclass[final]{header/fhnwreport}
+
+\input{header/header}
+
+\title{\textbf{{\Huge W 12 - Ultrasound}}}
+\author{{\Huge Physics Laboratory Report}}
+\date{{\LARGE Windisch, \the\day.\MONTH \the\year}}
+
+\begin{document}
+
+% Physics Laboratory Notebook
+\input{sections/physics_laboratory_notebook}
+
+% Title
+\selectlanguage{English}
+\maketitle
+\vfill
+\begin{LARGE}
+	\begin{tabularx}{\textwidth}{l p{0cm} X}
+		\hline
+		& & \\
+		\textbf{Experiment Leader:} & & Dominik Müller \\
+		\textbf{Assistant:} & & Nico Canzani \\
+	\end{tabularx}
+\end{LARGE}
+\clearpage
+
+% Contents
+\pagenumbering{Roman}		
+\selectlanguage{English}
+\tableofcontents
+\clearpage
+
+% Text
+\pagenumbering{arabic}
+\selectlanguage{English}
+\include{sections/theoretical_foundations}
+\include{sections/conducting_experiments}
+\include{sections/evaluation}
+\include{sections/error_calculation}
+\include{sections/results_discussion}
+
+% Bibliography
+\printbibliography[heading=bibintoc]
+\label{sec:literature}
+
+% Glossary
+%\printglossaries
+
+% Appendix
+\include{sections/appendix}
+
+% Debug
+\ifdraft{
+	\newpage
+	\listoftodos[\section{To-Do}]
+	\clearpage
+}
+{
+}
+
+\end{document}

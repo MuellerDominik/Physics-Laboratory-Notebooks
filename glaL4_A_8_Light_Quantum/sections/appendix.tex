@@ -1,0 +1,53 @@
+\begin{appendix}
+	\section{Measurements}
+	\label{sec:Measurements}
+
+	\begin{table}[H]
+		\centering
+		\begin{tabular}{l|c|c|c}
+			\multicolumn{1}{c}{} &  & \textbf{Voltage} & \textbf{Voltage} \\
+			& \textbf{Color} & \textbf{Direct} & \textbf{Counter-Field} \\
+			\textbf{Wave length} $\lambda$ & (-) & (V) & (V) \\
+			\hline\hline
+			\textbf{365.4 nm} & Ultraviolet (UVA) & 1.343 & 1.481930 \\ \hline
+			\textbf{404.7 nm} & Violet & 1.089 & 1.084324 \\ \hline
+			\textbf{435.8 nm} & Blue & 0.999 & 0.913948 \\ \hline
+			\textbf{546.1 nm} & Green *$^)$ & 0.615 & 0.582197 \\ \hline
+			\textbf{578.2 nm} & Orange / Yellow *$^)$ & 0.529 & 0.352045 \\ \hline
+		\end{tabular}
+		\caption{This table lists the measured photoelectric voltages of a mercury-vapor lamp.\\ *$^)$ A filter was used for these measurements. }
+		\label{tab:Hg_Measurements}
+	\end{table}
+
+	\begin{table}[H]
+		\centering
+		\begin{tabular}{l|c|c|c}
+			& \textbf{Color} & \textbf{Voltage} & \textbf{Wave length} $\lambda$ \\
+			\textbf{LED Designation} & (-) & (V) & (nm) \\
+			\hline\hline
+			\textbf{L-7113QBC-D} & Blue & 2.66 & 465.1 \\ \hline
+			\textbf{L-7113SGC} & Green & 2.78 & 517.8 \\ \hline
+			\textbf{L-7113SYC-H} & Yellow & 2.20 & 593.9 \\ \hline
+			\textbf{L-7113SEC-H} & Red & 2.06 & 645.3 \\ \hline
+			\textbf{L-7114QWC-D} & White & 2.72 & 469.8 \\ \hline
+			\textbf{LD 274} & Infrared & 1.18 & 933.0 \\ \hline
+		\end{tabular}
+		\caption{This table lists the measured voltages and wave lengths of the LEDs.}
+		\label{tab:LED_Measurements}
+	\end{table}
+	
+	\section{Used Filters}
+	\label{sec:filters}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.15]{filters}
+		\caption{These two filters were used in some measurements of the mercury-vapor lamp. The filter OG530 was used to measure the photoelectric voltage at a wavelength of 546.1 nm and the filter OG570 was used to measure the photoelectric voltage at a wavelength of 578.2 nm.}
+		\label{fig:filters}
+	\end{figure}
+	
+	\newpage
+	
+	\section{MATLAB Error Calculation}
+	\label{sec:MATLAB_Error_Calculation}
+	\lstinputlisting{appendix/Error_Calculation.m}
+\end{appendix}

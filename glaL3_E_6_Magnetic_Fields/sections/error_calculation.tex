@@ -1,0 +1,69 @@
+\section{Error Calculation}
+\label{sec:Error_Calculation}
+This section contains the error calculation of the measured values. The error calculation is done for the fitted vacuum permeability $\mu_0$ (see sections \ref{subsubsec:Short_Cylindrical_Coil} to \ref{subsubsec:Long_Cylindrical_Coil_Field}).
+
+\subsection{Uncertainties}
+\label{subsec:Uncertainties}
+All conducted measurements in this experiment have uncertainties. The uncertainty of the gaussmeter and the Hall sensor is really small (only 0.3 \%) compared to the other uncertainties. This means that it could be neglected. In this exercise it is considered nevertheless. The systematic uncertainties are shown in table \ref{tab:measurement_devices_and_sensors} and table \ref{tab:Specifications_Cylindrical_Coils} (the uncertainty of the radius $R$ is only half of the uncertainty of the diameter $d$).
+
+\subsection{Calculating the Uncertainty of $\mu_0$}
+\label{subsec:Calculating_the_Uncertainty}
+To derive the total uncertainty of the vacuum permeability $\mu_0$ the following equations are used. The statistical uncertainty is obtained from the fits (from QtiPlot).
+\begin{equation}
+s_{\mu_{0,\ TOT}}=\sqrt{s_{\mu_{0,\ SYST}}^2+s_{\mu_{0,\ STAT}}^2}
+\label{eq:total_uncert}
+\end{equation}
+with:
+\begin{equation}
+s_{\mu_{0,\ SYST}}=\sqrt{\left(\frac{\partial \mu_0}{\partial B_0}\Biggr|_{\mu_0}\cdot s_{B_0}\right)^2 + \left(\frac{\partial \mu_0}{\partial I}\Biggr|_{\mu_0}\cdot s_{I}\right)^2 + \left(\frac{\partial \mu_0}{\partial l}\Biggr|_{\mu_0}\cdot s_{l}\right)^2 + \left(\frac{\partial \mu_0}{\partial R}\Biggr|_{\mu_0}\cdot s_{R}\right)^2}
+\label{eq:error_propagation}
+\end{equation}
+
+and with:
+
+\[
+\frac{\partial \mu_0}{\partial B_0}\Biggr|_{\mu_0}=\frac{l}{NI}\cdot\sqrt{1+(\,^{2R}\!/_{l})^2} \qquad , \qquad \frac{\partial \mu_0}{\partial I}\Biggr|_{\mu_0}=-\frac{B_0l}{NI^2}\cdot\sqrt{1+(\,^{2R}\!/_{l})^2}
+\]
+
+\[
+\frac{\partial \mu_0}{\partial l}\Biggr|_{\mu_0}=\frac{B_0}{NI}\cdot\frac{1}{\sqrt{1+(\,^{2R}\!/_{l})^2}} \qquad , \qquad \frac{\partial \mu_0}{\partial R}\Biggr|_{\mu_0}=\frac{4B_0R}{lNI}\cdot\frac{1}{\sqrt{1+(\,^{2R}\!/_{l})^2}}
+\]
+
+where:
+\begin{conditions}
+	s_{\mu_{0,\ TOT}} & total uncertainty of $\mu_0$ \\
+	s_{\mu_{0,\ SYST}} & systematical uncertainty of $\mu_0$ \\
+	s_{\mu_{0,\ STAT}} & statistical uncertainty of $\mu_0$ (obtained from a fit) \\
+	B_0 & magnetic field in the center \\
+	\mu_0 & vacuum permeability \\
+	N & number of turns \\
+	I & current \\
+	l & length \\
+	R & radius
+\end{conditions}
+
+\subsection{Calculated Uncertainties $\mu_0$}
+\label{subsec:Calculated_Uncertainties}
+The systematic uncertainty was calculated using equation \ref{eq:error_propagation} and the statistical uncertainty was obtained from the fits (see sections \ref{subsubsec:Short_Cylindrical_Coil} to \ref{subsubsec:Long_Cylindrical_Coil_Field}). The total uncertainty was calculated by using equation \ref{eq:total_uncert}.
+\begin{table}[H]
+	\centering
+	\renewcommand{\arraystretch}{1.3}
+	\begin{tabular}{r||c|c|c}
+		 & \textbf{Systematic} $(\,^\text{Vs}\!/_\text{Am})$ & \textbf{Statistical} $(\,^\text{Vs}\!/_\text{Am})$ & \textbf{Total} $(\,^\text{Vs}\!/_\text{Am})$ \\
+		\hline\hline
+		\textbf{Short Center} (sec. \ref{subsubsec:Short_Cylindrical_Coil}) & $1.92167\cdot10^{-8}$ & $1.87622\cdot10^{-10}$ & $1.92176\cdot10^{-8}$ \\
+		\textbf{Short Field} (sec. \ref{subsubsec:Short_Cylindrical_Coil_Field}) & $1.92288\cdot10^{-8}$ & $6.34659\cdot10^{-10}$ & $1.92393\cdot10^{-8}$ \\
+		\textbf{Long Center} (sec. \ref{subsubsec:Long_Cylindrical_Coil}) & $1.48213\cdot10^{-8}$ & $1.57922\cdot10^{-10}$ & $1.48221\cdot10^{-8}$ \\
+		\textbf{Long Field} (sec. \ref{subsubsec:Long_Cylindrical_Coil_Field}) & $1.47958\cdot10^{-8}$ & $3.64561\cdot10^{-10}$ & $1.48003\cdot10^{-8}$ \\
+	\end{tabular}
+	\caption{Calculated Uncertainties}
+	\label{tab:Calculated_Uncertainties}
+\end{table}
+
+To calculate the systematic uncertainty of the short coil (center value) the measurement point where the current $I=0.42$\ A was used (see table \ref{tab:Short_Cylindrical_Coil_Measurements_Central_Value}).
+
+To calculate the systematic uncertainty of the short coil (field pattern) the measurement point which is closest to the center was used. The position of this point is $z=-0.003$\ m (see table \ref{tab:Short_Cylindrical_Coil_Measurements_Field_Pattern}).
+
+To calculate the systematic uncertainty of the long coil (center value) the measurement point where the current $I=0.521$\ A was used (see table \ref{tab:Long_Cylindrical_Coil_Measurements_Central_Value}).
+
+To calculate the systematic uncertainty of the long coil (field pattern) the measurement point which is closest to the center was used. The position of this point is $z=0.004$\ m (see table \ref{tab:Long_Cylindrical_Coil_Measurements_Field_Pattern}).

@@ -1,0 +1,72 @@
+\section{Results and Discussion}
+\label{sec:Results_and_Discussion}
+\subsection{Speed of Sound}
+\begin{table}[H]
+	\centering
+	\renewcommand{\arraystretch}{1.2}
+	\begin{tabular}{r l}
+		\hline
+		\textbf{Mean Value $\overline t$} & $(7.32\pm0.07)\cdot10^{-3}$\ s \\
+		\textbf{Standard Deviation $s$} & $0.3\cdot10^{-3}$\ s \\
+		\textbf{Speed of Sound $v$} & $(350\pm4)\ \,^\text{m}\!/_\text{s}$ \\ \hline
+	\end{tabular}
+	\caption{Speed of Sound Results}
+	\label{tab:Speed_of_Sound_Results}
+\end{table}
+The results came out exactly the same way. The task of calculating the mean value, the error and standard deviation can easily be done in Excel or in QtiPlot. However, the advantage of QtiPlot is that a plot can easily be created with all the relevant data.
+\subsection{Iron Content}
+\begin{table}[H]
+	\centering
+	\renewcommand{\arraystretch}{1.2}
+	\begin{tabular}{r c}
+		\hline
+		\textbf{Mean Value} & $(20.6\pm0.5)\ \%$ \\
+		\textbf{Weighted Mean Value} & $(20.4\pm0.4)\ \%$ \\ \hline
+	\end{tabular}
+	\caption{Iron Content Results}
+	\label{tab:Iron_Content_Results}
+\end{table}
+The mean value and the weighted mean value were calculated with Excel and QtiPlot. Both values are exactly the same. The error bars in the exported plot from QtiPlot (see figure \ref{fig:Iron_Content}) are extremely helpful to understand the weighted mean value. Doing this in Excel would be pretty challenging.
+\subsection{Spring Constant}
+\begin{table}[H]
+	\centering
+	\renewcommand{\arraystretch}{1.2}
+	\begin{tabular}{r l}
+		\hline
+		\textbf{Spring Constant $k$} & $(22.5\pm0.9)\ \,^\text{N}\!/_\text{m}$ \\
+		\textbf{Pretension Force $F_0$} & $(-0.8\pm0.5)$\ N \\ \hline
+	\end{tabular}
+	\caption{Spring Constant Results}
+	\label{tab:Spring_Constant_Results}
+\end{table}
+The linear fitted curve (see figure \ref{fig:Spring_Constant}) was created with QtiPlot. Furthermore, the results have been calculated using QtiPlot.
+\newpage
+\subsection{Pendulum}
+\begin{table}[H]
+	\centering
+	\renewcommand{\arraystretch}{1.2}
+	\begin{tabular}{r l}
+		\hline
+		\textbf{Amplitude $A$} & $(-1.22\pm0.03)$\ m \\
+		\textbf{Damping Constant $\Gamma$} & $(52\pm2)\cdot10^{-3}\ \text{s}^{-1}$ \\
+		\textbf{Frequency $f$} & $(55.0\pm0.2)\cdot10^{-3}$\ Hz \\
+		\textbf{Phase $\delta$} & $(-2.63\pm0.02)$\ rad \\
+		\textbf{Offset $y_0$} & $(49\pm5)\cdot10^{-3}$\ m \\ \hline
+	\end{tabular}
+	\caption{Damped Pendulum Results}
+	\label{tab:Damped_Pendulum_Results}
+\end{table}
+Calculating the parameters of the damped pendulum with QtiPlot is easy and does not take a lot of time. Calculating all the parameters with Excel would take quite some time. Furthermore, it would be more prone to errors.
+\subsection{RC Low-Pass Filter}
+\begin{table}[H]
+	\centering
+	\renewcommand{\arraystretch}{1.2}
+	\begin{tabular}{r l}
+		\hline
+		\textbf{Capacity $C$ (Output Voltage)} & $(216.9\pm0.9)\cdot10^{-9}$\ F \\
+		\textbf{Capacity $C$ (Phase)} & $(197.5\pm3.1)\cdot10^{-9}$\ F \\ \hline
+	\end{tabular}
+	\caption{RC Low-Pass Filter Results}
+	\label{tab:RC_Low-Pass_Filter_Results}
+\end{table}
+The calculated capacities from the output voltage and the phase do not match. Generally, voltage measurements with a cathode ray oscilloscope can be read off more accurately than phase shift measurements. Thus, the capacity value calculated from the output voltage is more trustworthy.

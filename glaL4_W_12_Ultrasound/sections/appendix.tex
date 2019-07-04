@@ -1,0 +1,43 @@
+\begin{appendix}
+	\section{Measurements}
+	\label{sec:Measurements}
+	
+	\begin{table}[H]
+		\centering
+		\begin{tabular}{l|c|c|c|c|c}
+			& \textbf{1st refl.} & \textbf{2nd refl.} & \textbf{3rd refl.} & \textbf{4th refl.} & \textbf{5th refl.} \\
+			\textbf{Material} & ($\mu$s) & ($\mu$s) & ($\mu$s) & ($\mu$s) & ($\mu$s) \\
+			\hline\hline
+			\textbf{PMMA @ 1 MHz} & 14.878 & 29.667 & - & - & - \\ \hline
+			\textbf{PMMA @ 5 MHz} & 14.903 & 29.994 & - & - & - \\ \hline
+			\textbf{Aluminium} & 12.583 & 25.271 & 37.556 & - & - \\ \hline
+			\textbf{Copper} & 17.224 & 34.234 & - & - & - \\ \hline
+			\textbf{Brass} & 18.041 & 34.870 & 52.109 & - & - \\ \hline
+			\textbf{Water 21 \textdegree C} & 25.200 & 65.754 & 133.440 & 186.695 & 240.265 \\ \hline
+			\textbf{Water 49 \textdegree C} & 24.148 & 64.144 & 129.150 & 180.400 & 232.590 \\ \hline
+			\textbf{Saltater 40 \textdegree C} & 22.682 & 60.532 & 123.192 & 172.070 & 221.240 \\ \hline
+			\textbf{PMMA trans. @ 1 MHz} & 28.533 & 58.087 & - & - & - \\ \hline
+		\end{tabular}
+		\caption{This table shows the measured time of flights. The metals and the liquids were measured at a frequency of 5 MHz.}
+		\label{tab:Slit_Measurements}
+	\end{table}
+
+	\begin{table}[H]
+		\centering
+		\begin{tabular}{l|c|c|c}
+			& \textbf{1st ampl.} & \textbf{2nd ampl.} & \textbf{3rd ampl.} \\
+			\textbf{Material} & (V) & (V) & (V) \\
+			\hline\hline
+			\textbf{PMMA @ 1 MHz} & 2.02 & 1.09 & 0.50 \\ \hline
+			\textbf{PMMA @ 5 MHz} & 2.39 & 0.43 & 0.01 \\ \hline
+		\end{tabular}
+		\caption{This table shows the measured amplitudes in PMMA at 1 MHz and 5 MHz.}
+		\label{tab:Slit_Measurements}
+	\end{table}
+
+	\newpage
+
+	\section{MATLAB Error Calculation}
+	\label{sec:MATLAB_Error_Calculation}
+	\lstinputlisting{appendix/Error_Calculation.m}
+\end{appendix}

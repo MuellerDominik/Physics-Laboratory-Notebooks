@@ -1,0 +1,111 @@
+\section{Error Calculation}
+\label{sec:Error_Calculation}
+This section contains the error calculation of the measured values. The systematic and the total error is calculated in this chapter. The error calculation is done for the fitted value of the Planck constant $h$ (see sections \ref{subsec:Direct_Measurement} to \ref{subsec:LED_Threshold_Voltage}).
+
+% ----------------------------------------------------------------------------------
+\subsection{Uncertainties}
+\label{subsec:Uncertainties}
+All conducted measurements in this experiment have uncertainties. Although, a 6$\,^{1}\!/_{2}$ digit multimeter and an oscilloscope was used to measure the values very precisely, there is still an uncertainty. This is partially due to the difficulty to move the cursors exactly to a peak. The systematic uncertainties are shown in table \ref{tab:equipment}.
+
+% ----------------------------------------------------------------------------------
+\subsection{Uncertainty of the Planck Constant $h$}
+\label{subsec:Uncertainty_of_the_Planck_Constant}
+First of all, equation \ref{eq:led_threshold} has to be rearranged as follows:
+
+\begin{equation}
+h\approx e\cdot U_{ph}\cdot\frac{\lambda}{c}
+\label{eq:planck_constant}
+\end{equation}
+where:
+\begin{multicols}{2}
+	\begin{center}
+		\begin{conditions}
+			h & Planck constant in J$\cdot$s \\
+			e & elementary charge in C \\
+			U_{ph} & photoelectric voltage in V
+		\end{conditions}
+		\begin{conditions}
+			\lambda & wave length in m \\
+			c & speed of light in $\,^{\text{m}}\!/_{\text{s}}$
+		\end{conditions}
+	\end{center}
+\end{multicols}
+
+The total uncertainty $s_{h,\ \text{tot}}$ of the Planck constant $h$ is calculated with equation \ref{eq:total_uncertainty_planck_constant}:
+
+\begin{equation}
+s_{h,\ \text{tot}}=\sqrt{s_{h,\ \text{syst}}^2+s_{h,\ \text{stat}}^2}
+\label{eq:total_uncertainty_planck_constant}
+\end{equation}
+
+with:
+
+\begin{equation}
+s_{h,\ \text{syst}}=\sqrt{\left(\frac{\partial h}{\partial U_{ph}}\Biggr|_{h}\cdot s_{U_{ph}}\right)^2 + \left(\frac{\partial h}{\partial \lambda}\Biggr|_{h}\cdot s_{\lambda}\right)^2}
+\label{eq:syst_uncertainty_planck_constant}
+\end{equation}
+
+and:
+
+\[
+\frac{\partial h}{\partial U_{ph}}\Biggr|_{h}=\frac{e\cdot\lambda}{c} \qquad , \qquad \frac{\partial h}{\partial \lambda}\Biggr|_{h}=\frac{e\cdot U_{ph}}{c}
+\]
+
+where:
+\begin{multicols}{2}
+\begin{conditions}
+	s_{h,\ \text{tot}} & total uncertainty of $h$ \\
+	s_{h,\ \text{syst}} & systematic uncertainty of $h$ \\
+	s_{h,\ \text{stat}} & statistical uncertainty of $h$ \\
+	s_{U_{ph}} & uncertainty of $U_{ph}$ \\
+	U_{ph} & photoelectric voltage in V
+\end{conditions}
+\begin{conditions}
+	s_{\lambda} & uncertainty of $\lambda$ \\
+	\lambda & wave length in m \\
+	h & Planck constant \\
+	e & elementary charge \\
+	c & speed of light
+\end{conditions}
+\end{multicols}
+
+\newpage
+For the error calculation the following parameters were used:
+
+\begin{multicols}{2}
+	\begin{conditions}
+		s_{U_{ph}} & 6 mV \\
+		s_{U_{ph}}^\prime & 0.02 V \\
+		U_{ph} & the respective photoelectric voltage \\
+		e & $1.602 176 634\cdot 10^{-19}\ \si{C}$
+	\end{conditions}
+	\begin{conditions}
+		s_{\lambda} & 0 \\
+		s_{\lambda}^\prime & 1 nm \\
+		\lambda & the respective wave length \\
+		c & $299'792'458\ \,^{\text{m}}\!/_{\text{s}}$
+	\end{conditions}
+\end{multicols}
+
+The values $s_{U_{ph}}$ and $s_{\lambda}$ are used for the photoelectric effect and the values $s_{U_{ph}}^\prime$ and $s_{\lambda}^\prime$ are used for the light-eimitting diode. This is due the fact, that different measurement devices were used (multimeter and oscilloscope). Furthermore the wave lengths of the mercury-vapor lamp were not measured (obtained online).
+
+Table \ref{tab:Uncertainty_Planck_Constant} shows the statistical, the systematic and the total uncertainty. The systematic uncertainty was calculated by using equation \ref{eq:syst_uncertainty_planck_constant}. The statistical uncertainty was obtained from QtiPlot. The total uncertainty was calculated by using equation \ref{eq:total_uncertainty_planck_constant}. All calculations were done in MATLAB (see appendix \ref{sec:MATLAB_Error_Calculation}).
+
+\begin{table}[H]
+	\centering
+	\renewcommand{\arraystretch}{1.2}
+	\begin{tabular}{|l|c|c|c|}
+		\cline{2-4}
+		\multicolumn{1}{c|}{} & \textbf{Statistic} & \textbf{Systematic} & \textbf{Total} \\
+		\multicolumn{1}{c|}{} & in J$\cdot$s & in J$\cdot$s & in J$\cdot$s \\
+		\hline
+		\textbf{Direct Measurement}\ $\boldsymbol{h}$ & $13.9\cdot10^{-36}$ & $1.2\cdot10^{-36}$ & $14.0\cdot10^{-36}$ \\
+		\hline
+		\textbf{Counter-Field Method}\ $\boldsymbol{h}$ & $51.2\cdot10^{-36}$ & $1.2\cdot10^{-36}$ & $51.2\cdot10^{-36}$ \\
+		\hline
+		\textbf{Light-Emitting Diode}\ $\boldsymbol{h}$ & $103.1\cdot10^{-36}$ & $5.2\cdot10^{-36}$ & $103.2\cdot10^{-36}$ \\
+		\hline
+	\end{tabular}
+	\caption{The statistical uncertainty is from QtiPlot. Error propagation is used to calculate the systematic and the total uncertainty.}
+	\label{tab:Uncertainty_Planck_Constant}
+\end{table}

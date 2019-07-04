@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE qti>
+<qti app="QtiPlot" version="0.9.9.2" dpi="96" arch="Win64" script="muParser" windows="5" expand="1">
+	<window type="1" name="Tabelle1" date="2458402.3860107" w="862" h="828" state="1">
+		<tab rows="30" cols="2" labels="0">
+			<col name="Messung" type="6" num="0" prec="13" plot="1" width="100" stat="0" data="1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;"/>
+			<col name="Laufzeit" type="6" num="0" prec="13" plot="2" width="100" stat="0" data="7.59;7.16;6.97;7.55;6.77;6.97;7.74;7.18;7.32;7.7;7.4;7.58;7.04;7.17;6.89;7.2;7.33;7.21;8.05;7.63;"/>
+		</tab>
+	</window>
+	<window type="6" name="Tabelle1-ColStats2" date="2458402.3945001" x="862" y="0" w="945" h="105" label="Column Statistics of Tabelle1" title="2">
+		<tab rows="1" cols="13" labels="0" base="Tabelle1" stat="1" targets="1">
+			<col name="Col" type="1" format="" plot="1" width="47" stat="2" comment="Column Name"/>
+			<col name="Rows" type="1" format="" plot="2" width="58" stat="3" comment="Rows Included"/>
+			<col name="Mean" type="6" num="0" prec="13" plot="2" width="58" stat="5" comment="Mean"/>
+			<col name="StandardDev" type="6" num="0" prec="13" plot="2" width="105" stat="6" comment="Standard Deviation"/>
+			<col name="StandardError" type="6" num="0" prec="13" plot="5" width="127" stat="7" comment="Standard Error"/>
+			<col name="Variance" type="6" num="0" prec="13" plot="2" width="108" stat="8" comment="Variance"/>
+			<col name="Sum" type="6" num="0" prec="13" plot="2" width="53" stat="9" comment="Sum"/>
+			<col name="iMax" type="6" num="0" prec="13" plot="2" width="55" stat="10" comment="Index of Maximum Value"/>
+			<col name="Max" type="6" num="0" prec="13" plot="2" width="51" stat="11" comment="Maximum Value"/>
+			<col name="iMin" type="6" num="0" prec="13" plot="2" width="52" stat="12" comment="Index of Minimum Value"/>
+			<col name="Min" type="6" num="0" prec="13" plot="2" width="48" stat="13" comment="Minimum Value"/>
+			<col name="N" type="6" num="0" prec="13" plot="2" width="35" stat="14" comment="Number of Points"/>
+			<col name="Median" type="6" num="0" prec="13" plot="2" width="70" stat="15" comment="Median"/>
+		</tab>
+	</window>
+	<window type="1" name="Table1" date="2458414.4481948" x="35" y="32" w="610" h="609">
+		<tab rows="30" cols="2" labels="3">
+			<col name="Measurement" type="6" num="0" prec="6" plot="1" width="100" stat="0" lname="Measurement" data="1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;"/>
+			<col name="Duration" type="6" num="0" prec="6" plot="2" width="100" stat="0" lname="Duration ti" unit="ms" data="7.59;7.16;6.97;7.55;6.77;6.97;7.74;7.18;7.32;7.7;7.4;7.58;7.04;7.17;6.89;7.2;7.33;7.21;8.05;7.63;"/>
+		</tab>
+	</window>
+	<window type="3" name="Graph1" date="2458402.3946337" w="945" h="723" state="1" dpi="96">
+		<layout cw="510" ch="410" w="400" h="300" left="5" right="5" top="5" bottom="5" rows="1" cols="1" vSpace="5" hSpace="5" hAlign="0" vAlign="0" align="0" common="0" link="0" scale="1" sPrint="0" cmPrint="0" atUnits="1" atdIndex="0" atPolicy="4" alMode="0" luMode="2"/>
+		<tab x="9" y="8" w="795" h="649" autoscale="1" gap="1" scaleFont="1">
+			<page x="0.0176471" y="0.0195122" w="1.55882" h="1.58293"/>
+			<title text="Title" color="#000000" font="Lucida Sans Unicode,15.6763,-1,5,75,0,0,0,0,0" align="4228" fmw="50"/>
+			<frame bg="#ffffff,0"/>
+			<canvas x="78" y="101" w="657" h="493" fixRatio="1.33333" bg="#ffffff,0"/>
+			<grid xAxis="2" yAxis="0">
+				<majx lc="#a0a0a4" lw="1" ls="0"/>
+				<minx lc="#a0a0a4" lw="1" ls="0"/>
+				<majy lc="#a0a0a4" lw="1" ls="0"/>
+				<miny lc="#a0a0a4" lw="1" ls="0"/>
+			</grid>
+			<curve type="1" z="21" table="Tabelle1" x="Messung" y="Laufzeit" from="0" to="19" line="0" lc="#000000" lw="1" ls="0" brc="#000000" brs="0">
+				<symbol style="1" size="7" lc="#000000" lw="1" ls="0" brc="#000000"/>
+			</curve>
+			<curve type="19" z="22" name="F1" comment="Mittelwert" f="0" y="7.3225" from="0" to="20" points="100" line="1" lc="#ff0000" lw="1" ls="0" brc="#000000" brs="0"/>
+			<curve type="19" z="23" name="F2" comment="Fehler des Mittelwertes" f="0" y="7.3225 + 0.0735307848169" from="0" to="20" points="100" line="1" lc="#0000ff" lw="1" ls="0" brc="#000000" brs="0"/>
+			<curve type="19" z="24" name="F3" comment="Fehler des Mittelwertes" f="0" y="7.3225 - 0.0735307848169" from="0" to="20" points="100" line="1" lc="#0000ff" lw="1" ls="0" brc="#000000" brs="0"/>
+			<curve type="19" z="25" name="F4" comment="Standardabweichung" f="0" y="7.3225 + 0.328839666579" from="0" to="20" points="100" line="1" lc="#00ffff" lw="1" ls="0" brc="#000000" brs="0"/>
+			<curve type="19" z="26" name="F5" comment="Standardabweichung" f="0" y="7.3225 - 0.328839666579" from="0" to="20" points="100" line="1" lc="#ff00ff" lw="1" ls="0" brc="#000000" brs="0"/>
+			<axis id="0" on="1" type="0" format="0" prec="6" lw="1">
+				<div from="6.6" to="8.2" step="0" maj="9" min="5" type="0"/>
+				<ticks maj="1" majl="14" min="1" minl="8"/>
+				<title text="%(?Y)" color="#000000" font="Lucida Sans Unicode,12.5411,-1,5,75,0,0,0,0,0" align="5124" space="2" fmw="46"/>
+				<labels space="4" font="Lucida Sans Unicode,12.5411,-1,5,50,0,0,0,0,0"/>
+			</axis>
+			<axis id="1" on="1" type="0" format="0" prec="6" lw="1">
+				<div from="6.6" to="8.2" step="0" maj="9" min="5" type="0"/>
+				<ticks maj="1" majl="14" min="1" minl="8"/>
+				<title text="%(?Y)" color="#000000" font="Lucida Sans Unicode,12.5411,-1,5,75,0,0,0,0,0" align="5124" space="2" fmw="46"/>
+				<labels space="4" font="Lucida Sans Unicode,12.5411,-1,5,50,0,0,0,0,0"/>
+			</axis>
+			<axis id="2" on="1" type="0" format="0" prec="6" lw="1">
+				<div from="-5" to="25" step="0" maj="7" min="5" type="0"/>
+				<ticks maj="1" majl="14" min="1" minl="8"/>
+				<title text="%(?X)" color="#000000" font="Lucida Sans Unicode,12.5411,-1,5,75,0,0,0,0,0" align="5124" space="2" fmw="46"/>
+				<labels space="4" font="Lucida Sans Unicode,12.5411,-1,5,50,0,0,0,0,0"/>
+			</axis>
+			<axis id="3" on="1" type="0" format="0" prec="6" lw="1">
+				<div from="0" to="25" step="0" maj="6" min="5" type="0"/>
+				<ticks maj="1" majl="14" min="1" minl="8"/>
+				<title text="%(?X)" color="#000000" font="Lucida Sans Unicode,12.5411,-1,5,75,0,0,0,0,0" align="5124" space="2" fmw="46"/>
+				<labels space="4" font="Lucida Sans Unicode,12.5411,-1,5,50,0,0,0,0,0"/>
+			</axis>
+			<item type="5" x="-0.564024390243903" y="7.80325203252033" r="-0.564024390243903" b="7.80325203252033" lc="#000000" lw="1" ls="0" length="4" angle="45" fill="1" at="0"/>
+			<item type="5" x="5.60975609756098" y="7.90731707317073" r="5.60975609756098" b="7.90731707317073" lc="#000000" lw="1" ls="0" length="4" angle="45" fill="1" at="0"/>
+			<item type="2" x="-4.45121951219512" y="8.1609756097561" frame="1" lc="#000000" lw="1" ls="0" bg="#ffffff,0" brc="#000000" brs="0" onTop="1" at="0" on="1" auto="1" font="Lucida Sans Unicode,12.933,-1,5,50,0,0,0,0,0" text="\l(1)%(1)&#10;\l(2)%(2)&#10;\l(3)%(3)&#10;\l(4)%(4)&#10;\l(5)%(5)&#10;\l(6)%(6)"/>
+		</tab>
+	</window>
+	<window type="3" name="Graph2" date="2458414.4488976" x="769" y="165" w="496" h="447" active="1" dpi="96">
+		<layout cw="482" ch="389" w="400" h="300" left="5" right="5" top="5" bottom="5" rows="1" cols="1" vSpace="5" hSpace="5" hAlign="0" vAlign="0" align="0" common="0" link="0" scale="1" sPrint="0" cmPrint="0" atUnits="1" atdIndex="0" atPolicy="4" alMode="0" luMode="2"/>
+		<tab x="5" y="5" w="459" h="379" autoscale="1" gap="1">
+			<page x="0.0103734" y="0.0128535" w="0.952282" h="0.974293"/>
+			<title text="Speed of Sound" color="#000000" font="Lucida Sans Unicode,10,-1,5,75,0,0,0,0,0" align="4228" fmw="111"/>
+			<frame bg="#ffffff,0"/>
+			<canvas x="45" y="46" w="400" h="300" fixRatio="1.33333" bg="#ffffff,0"/>
+			<grid xAxis="2" yAxis="0">
+				<majx lc="#a0a0a4" lw="1" ls="0"/>
+				<minx lc="#a0a0a4" lw="1" ls="0"/>
+				<majy lc="#a0a0a4" lw="1" ls="0"/>
+				<miny lc="#a0a0a4" lw="1" ls="0"/>
+			</grid>
+			<curve type="1" z="21" table="Table1" x="Measurement" y="Duration" from="0" to="-1" line="0" lc="#000000" lw="1" ls="0" brc="#000000" brs="0">
+				<symbol style="1" size="7" lc="#000000" lw="1" ls="0" brc="#000000"/>
+			</curve>
+			<curve type="19" z="22" name="F1" comment="Mean Value" f="0" y="7.3225" from="0" to="21" points="100" line="1" lc="#ff0000" lw="2" ls="0" brc="#000000" brs="0"/>
+			<curve type="19" z="23" name="F2" comment="Standard Deviation" f="0" y="7.3225-0.328839666579" from="0" to="21" points="100" line="1" lc="#008000" lw="2" ls="0" brc="#000000" brs="0"/>
+			<curve type="19" z="24" name="F3" f="0" y="7.3225+0.328839666579" from="0" to="21" points="100" line="1" lc="#008000" lw="2" ls="0" brc="#000000" brs="0"/>
+			<curve type="19" z="25" name="F4" comment="Mean Value Error" f="0" y="7.3225-0.0735307848169" from="0" to="21" points="100" line="1" lc="#0000ff" lw="2" ls="0" brc="#000000" brs="0"/>
+			<curve type="19" z="26" name="F5" f="0" y="7.3225+0.0735307848169" from="0" to="21" points="100" line="1" lc="#0000ff" lw="2" ls="0" brc="#000000" brs="0"/>
+			<axis id="0" on="1" type="0" format="0" prec="6" lw="1">
+				<div from="6.6" to="8.2" step="0" maj="9" min="5" type="0"/>
+				<ticks maj="3" majl="9" min="3" minl="5"/>
+				<title text="%(?Y)" color="#000000" font="Lucida Sans Unicode,8,-1,5,75,0,0,0,0,0" align="5124" space="2" fmw="32"/>
+				<labels space="4" font="Lucida Sans Unicode,8,-1,5,50,0,0,0,0,0"/>
+			</axis>
+			<axis id="1" on="1" type="0" format="0" prec="6" lw="1">
+				<div from="6.6" to="8.2" step="0" maj="9" min="5" type="0"/>
+				<ticks maj="3" majl="9" min="3" minl="5"/>
+				<title text=" " color="#000000" font="Lucida Sans Unicode,8,-1,5,75,0,0,0,0,0" align="5124" space="2" fmw="4"/>
+			</axis>
+			<axis id="2" on="1" type="0" format="0" prec="6" lw="1">
+				<div from="0" to="21" step="0" maj="6" min="5" type="0"/>
+				<ticks maj="3" majl="9" min="3" minl="5"/>
+				<title text="%(?X)" color="#000000" font="Lucida Sans Unicode,8,-1,5,75,0,0,0,0,0" align="5124" space="2" fmw="32"/>
+				<labels space="4" font="Lucida Sans Unicode,8,-1,5,50,0,0,0,0,0"/>
+			</axis>
+			<axis id="3" on="1" type="0" format="0" prec="6" lw="1">
+				<div from="0" to="21" step="0" maj="6" min="5" type="0"/>
+				<ticks maj="3" majl="9" min="3" minl="5"/>
+				<title text="Distance s = (2.561±0.003) m, Temperature ϑ = 23 °C" color="#000000" font="Lucida Sans Unicode,8,-1,5,75,0,0,0,0,0" align="5124" space="2" fmw="343"/>
+			</axis>
+			<item type="2" x="0.526315789473684" y="8.17859531772575" frame="1" lc="#000000" lw="1" ls="0" bg="#ffffff" brc="#000000" brs="0" onTop="1" at="0" on="1" auto="1" font="Lucida Sans Unicode,8,-1,5,50,0,0,0,0,0" text="&lt;b&gt;\l(1)%(1)&#10;\l(2)%(2)&#10;\l(5)%(5)&#10;\l(3)%(3)&lt;/b&gt;"/>
+		</tab>
+	</window>
+</qti>

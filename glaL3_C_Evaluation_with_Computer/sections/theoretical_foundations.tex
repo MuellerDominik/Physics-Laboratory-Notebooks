@@ -1,0 +1,113 @@
+\section{Theoretical Foundations}
+\label{sec:Theoretical_Foundations}
+This section summarizes the theory and formulas necessary to understand the following experiments in section \ref{sec:Evaluation}.
+
+\subsection{Measurement Errors}
+\label{subsec:Measurement_Errors}
+Measurement errors are inevitable. They may result from the influence of the test conditions, the measuring instruments themselves or human errors. The deviation of a measured value from its true value affects the result. Thus, the result also deviates from its true value. The error analysis tries to estimate the effect of a measurement error on the result.
+
+\subsubsection{Types of Measurement Errors}
+\label{subsubsec:Types_of_Measurement_Errors}
+Generally, one differentiates two types of measurement errors: random and systematic errors. Random measurement errors cause the measured values to fluctuate around the true value. They can be decreased by repeating the same measurement several times. Systematic errors are a result of the test conditions and the measuring instruments. Most of the spotted systematic errors can be corrected. Usually, the problem is that they are not easy to spot.
+
+\subsubsection{Precision of Measurement Errors}
+\label{subsubsec:Precision_of_Measurement_Errors}
+Every physical measurement needs an according error analysis to be meaningful. Since the measurement error is just an estimate, it is sufficient to round the error to one significant digit.
+
+\subsection{Formulas}
+\label{subsec:Formulas}
+The following formulas are important to estimate measurement errors.
+
+\subsubsection{Arithmetic Mean}
+\label{subsubsec:Arithmetic_Mean}
+To determine the arithmetic mean value from several measurements ($x_1, x_2, x_3, ...\ x_n$), the following equation is used:
+\begin{equation}
+\overline x=\frac{1}{n}\left(\ \sum_{i=1}^{n} x_i\ \right)
+\label{eq:Arithmetic_Mean}
+\end{equation}
+
+The error of the arithmetic mean value is calculated as follows:
+\begin{equation}
+s_{\overline x}=\sqrt{\frac{\sum\limits_{i=1}^{n}\left(x_i - \overline x\right)^2}{n\cdot(n-1)}}
+\label{eq:Arithmetic_Mean_Error}
+\end{equation}
+
+Result:
+\begin{equation}
+x=\overline x \pm s_{\overline x}
+\label{eq:Arithmetic_Mean_Result}
+\end{equation}
+
+This is only valid, if all the measurements $x_i$ have the same accuracy and are independent of each other.
+
+\subsubsection{Weighted Arithmetic Mean}
+\label{subsubsec:Weighted_Arithmetic_Mean}
+When a physical quantity has been determined with different measuring methods, the results may have different accuracies ($x_i={\overline{x_i}}\pm s_{\overline{xi}}$). To determine the weighted arithmetic mean value the following equation is used:
+\begin{equation}
+\overline x=\frac{\sum\limits_{i=1}^{n}g_{\overline {xi}}\cdot x_i}{\sum\limits_{i=1}^{n}g_{\overline {xi}}} \qquad \text{with the respective weights} \qquad g_{\overline {xi}}=\frac{1}{{s_{\overline {xi}}}^2}
+\label{eq:Weighted_Arithmetic_Mean}
+\end{equation}
+
+The error of the weighted arithmetic mean value is calculated as follows:
+\begin{equation}
+s_{\overline x}=\frac{1}{\sqrt{\sum\limits_{i=1}^{n}g_{\overline {xi}}}}
+\label{eq:Weighted_Arithmetic_Mean_Error}
+\end{equation}
+
+Result:
+\begin{equation}
+x=\overline x \pm s_{\overline x}
+\label{eq:Weighted_Arithmetic_Mean_Result}
+\end{equation}
+
+Weighting requires the errors to be random.
+
+\subsubsection{Error Theory}
+\label{subsubsec:Error_Theory}
+The standard deviation $\sigma$ provides information on the spread of the measured values $x_i$. To calculate the experimental standard deviation from $n$ measurements (finite) the following equation is used:
+\begin{equation}
+s=\sqrt{\frac{\sum\limits_{i=1}^{n}\left(x_i - \overline x\right)^2}{n-1}}
+\label{eq:Experimental_Standard_Deviation}
+\end{equation}
+
+The calculated experimental standard deviation $s$ converges to $\sigma$ for $n\to\infty$.
+
+\subsubsection{Regression}
+\label{subsubsec:Regression}
+Some experiments seek to prove a physical law or to determine parameters of a functional relationship between physical quantities. To accomplish this for a given set of measured value pairs ($x_i$, $y_i$), the parameters ($a_0$, $a_1$, ...) of a given law $f(x, a_0, a_1, ...)$ are adjusted, so that the best possible agreement between theory and experiment is achieved.
+
+According to the error theory of Gauss, the most probable set of parameters is found, when the sum of the squared deviations becomes minimal: 
+\begin{equation}
+\chi^2(a_1, a_2, ...\ a_m)=\sum_{i=1}^{n}\left\{\frac{[y_i-f(x_i, a_1, a_2, ...\ a_m)]^2}{{\sigma_i}^2}\right\}=\text{Minimum}
+\end{equation}
+
+The following equation is used estimate the error from the measurements and the fit:
+\begin{equation}
+\sigma=\sqrt{\frac{\sum\limits_{i=1}^{n}[y_i-f(x_i, a_1, a_2, ...\ a_m)]^2}{n-m}}
+\end{equation}
+
+\subsubsection{Error Propagation}
+\label{subsubsec:Error_Propagation}
+In the majority of cases, physical experiments do not directly provide the wanted measurement result. Usually, one ends up with a function $R$ which depends on several variables:
+\[
+R=R(x,\ y,\ z,\ ...)
+\]
+The arguments $x,\ y,\ z,\ ...$ are either directly measured quantities or values from textbooks in the form:
+\[
+x={\overline{x}}\pm s_{\overline{x}},\qquad y={\overline{y}}\pm s_{\overline{y}},\qquad z={\overline{z}}\pm s_{\overline{z}},\qquad ...
+\]
+The mean value of $R$ ($\overline R$) can be determined by inserting the mean values of the arguments:
+\begin{equation}
+\overline{R}=R(\overline{x},\ \overline{y},\ \overline{z},\ ...)
+\label{eq:Error_Propagation_Mean}
+\end{equation}
+The mean absolute error $s_{\overline R}$ is calculated using the following equation:
+\begin{equation}
+s_{\overline{R}}=\sqrt{\left(\frac{\partial R}{\partial x}\Biggr|_{\overline R}\cdot s_{\overline{x}}\right)^2 + \left(\frac{\partial R}{\partial y}\Biggr|_{\overline R}\cdot s_{\overline{y}}\right)^2 + \left(\frac{\partial R}{\partial z}\Biggr|_{\overline R}\cdot s_{\overline{z}}\right)^2 +\ \ ...}
+\label{eq:Error_Propagation}
+\end{equation}
+Result:
+\begin{equation}
+R=\overline R \pm s_{\overline R}
+\label{eq:Error_Propagation_Result}
+\end{equation}

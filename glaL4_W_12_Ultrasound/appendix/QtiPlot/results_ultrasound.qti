@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE qti>
+<qti app="QtiPlot" version="0.9.9.2" dpi="96" arch="Win64" script="muParser" windows="3" expand="1">
+	<window type="1" name="Table1" date="2458434.7922325" x="0" y="0" w="857" h="650">
+		<tab rows="30" cols="3" labels="0">
+			<col name="1" type="6" num="0" prec="6" plot="1" width="100" stat="0" data="2751;2700;2721;2700;1488;1483;1538;1540;1612;1620;1405;1350;"/>
+			<col name="2" type="6" num="0" prec="6" plot="4" width="100" stat="0" data="19;0;21;0;7;0;8;0;10;0;15;0;"/>
+			<col name="3" type="6" num="0" prec="6" plot="2" width="100" stat="0" data="8;8;7;7;6;6;5;5;4;4;3;3;"/>
+		</tab>
+	</window>
+	<window type="3" name="Graph2" date="2458434.7975253" x="870" y="9" w="496" h="237" dpi="96">
+		<layout cw="482" ch="179" w="400" h="300" left="5" right="5" top="5" bottom="5" rows="1" cols="1" vSpace="5" hSpace="5" hAlign="0" vAlign="0" align="0" common="0" link="0" scale="1" sPrint="0" cmPrint="0" atUnits="1" atdIndex="0" atPolicy="4" alMode="0" luMode="2"/>
+		<tab x="28" y="2" w="413" h="160" autoscale="1" gap="1">
+			<page x="0.0580913" y="0.0111732" w="0.856846" h="0.893855"/>
+			<title text="Graphical Comparison" color="#000000" font="Lucida Sans Unicode,10,-1,5,75,0,0,0,0,0" align="4228" fmw="159"/>
+			<frame bg="#ffffff,0"/>
+			<canvas x="31" y="24" w="400" h="100" fixRatio="0" bg="#ffffff,0"/>
+			<grid xAxis="2" yAxis="0">
+				<majx lc="#a0a0a4" lw="1" ls="0"/>
+				<minx lc="#a0a0a4" lw="1" ls="0"/>
+				<majy lc="#a0a0a4" lw="1" ls="0"/>
+				<miny lc="#a0a0a4" lw="1" ls="0"/>
+			</grid>
+			<axis id="0" on="0" type="0" format="0" prec="6" lw="1">
+				<div from="0" to="5" step="0" maj="2" min="4" type="0"/>
+				<ticks maj="1" majl="9" min="1" minl="5"/>
+				<title text="%(?Y)" color="#000000" font="Lucida Sans Unicode,8,-1,5,75,0,0,0,0,0" align="5124" space="2" fmw="32"/>
+				<labels space="4" font="Lucida Sans Unicode,8,-1,5,50,0,0,0,0,0"/>
+			</axis>
+			<axis id="1" on="0" type="0" format="0" prec="6" lw="1">
+				<div from="0.5" to="3.5" step="0" maj="7" min="5" type="0"/>
+				<ticks maj="1" majl="9" min="1" minl="5"/>
+				<title text=" " color="#000000" font="Lucida Sans Unicode,8,-1,5,75,0,0,0,0,0" align="5124" space="2" fmw="4"/>
+			</axis>
+			<axis id="2" on="1" type="0" format="0" prec="6" lw="1">
+				<div from="0" to="100" step="0" maj="6" min="0" type="0"/>
+				<ticks maj="3" majl="9" min="3" minl="5"/>
+				<title text="Vacuum Permeability (Vs/Am)" color="#000000" font="Lucida Sans Unicode,8,-1,5,75,0,0,0,0,0" align="5124" space="2" fmw="189"/>
+				<labels space="4" font="Lucida Sans Unicode,8,-1,5,50,0,0,0,0,0"/>
+			</axis>
+			<axis id="3" on="0" type="0" format="0" prec="6" lw="1">
+				<div from="1.23e-06" to="1.275e-06" step="0" maj="10" min="5" type="0"/>
+				<ticks maj="1" majl="9" min="1" minl="5"/>
+				<title text="%(?X)" color="#000000" font="Lucida Sans Unicode,8,-1,5,75,0,0,0,0,0" align="5124" space="2" fmw="32"/>
+			</axis>
+		</tab>
+	</window>
+	<window type="3" name="Graph3" date="2458465.811892" x="857" y="246" w="657" h="263" active="1" dpi="96">
+		<layout cw="643" ch="205" w="400" h="300" left="5" right="5" top="5" bottom="5" rows="1" cols="1" vSpace="5" hSpace="5" hAlign="0" vAlign="0" align="0" common="0" link="0" scale="1" sPrint="0" cmPrint="0" atUnits="1" atdIndex="0" atPolicy="4" alMode="0" luMode="2"/>
+		<tab x="61" y="22" w="533" h="180" autoscale="1" gap="1">
+			<page x="0.0948678" y="0.107317" w="0.828927" h="0.878049"/>
+			<title text="Graphical Comparison" color="#000000" font="Lucida Sans Unicode,10,-1,5,75,0,0,0,0,0" align="4228" fmw="159"/>
+			<frame bg="#ffffff,0"/>
+			<canvas x="61" y="44" w="518" h="120" fixRatio="0" bg="#ffffff,0"/>
+			<grid xAxis="2" yAxis="0">
+				<majx lc="#a0a0a4" lw="1" ls="0"/>
+				<minx lc="#a0a0a4" lw="1" ls="0"/>
+				<majy lc="#a0a0a4" lw="1" ls="0"/>
+			</grid>
+			<curve type="1" z="21" table="Table1" x="1" y="3" from="0" to="-1" line="0" lc="#000000" lw="1" ls="0" brc="#000000" brs="0">
+				<symbol style="10" size="13" lc="#000000" lw="1.4" ls="0" brc="#000000"/>
+				<errors type="0" z="22" table="Table1" col="2" from="0" to="-1" lw="2" lc="#ff0000" cap="8" plus="1" minus="1" symb="1"/>
+			</curve>
+			<axis id="0" on="0" type="0" format="0" prec="6" lw="1">
+				<div from="2" to="9" step="0" maj="8" min="5" type="0"/>
+				<ticks maj="1" majl="9" min="1" minl="5"/>
+				<title text="%(?Y)" color="#000000" font="Lucida Sans Unicode,8,-1,5,75,0,0,0,0,0" align="5124" space="2" fmw="32"/>
+				<labels space="4" font="Lucida Sans Unicode,8,-1,5,50,0,0,0,0,0"/>
+			</axis>
+			<axis id="1" on="0" type="0" format="0" prec="6" lw="1">
+				<div from="0" to="9" step="0" maj="10" min="5" type="0"/>
+				<ticks maj="1" majl="9" min="1" minl="5"/>
+				<title text=" " color="#000000" font="Lucida Sans Unicode,8,-1,5,75,0,0,0,0,0" align="5124" space="2" fmw="4"/>
+			</axis>
+			<axis id="2" on="1" type="0" format="0" prec="6" lw="1">
+				<div from="1200" to="2800" step="0" maj="4" min="5" type="0"/>
+				<ticks maj="3" majl="9" min="3" minl="5"/>
+				<title text="Ultrasound Speed (m/s)" color="#000000" font="Lucida Sans Unicode,8,-1,5,75,0,0,0,0,0" align="5124" space="2" fmw="151"/>
+				<labels space="4" font="Lucida Sans Unicode,8,-1,5,50,0,0,0,0,0"/>
+			</axis>
+			<axis id="3" on="0" type="0" format="0" prec="6" lw="1">
+				<div from="0" to="300" step="0" maj="7" min="5" type="0"/>
+				<ticks maj="1" majl="9" min="1" minl="5"/>
+				<title text="%(?X)" color="#000000" font="Lucida Sans Unicode,8,-1,5,75,0,0,0,0,0" align="5124" space="2" fmw="32"/>
+			</axis>
+		</tab>
+	</window>
+</qti>

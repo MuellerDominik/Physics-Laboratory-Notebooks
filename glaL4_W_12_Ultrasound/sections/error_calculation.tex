@@ -1,0 +1,147 @@
+\section{Error Calculation}
+\label{sec:Error_Calculation}
+This section contains the error calculation of the measured values. The systematic and the total error is calculated in this chapter. The error calculation is done for the fitted values longtidudinal sound velocity $c_L$, transversal sound velocity $c_T$ and the attenuation coefficient $\mu$ (see sections \ref{subsec:wave_length_calculation} to \ref{subsec:Longitudinal_Ultrasound_Velocities_in_Liquids}).
+
+% ----------------------------------------------------------------------------------
+\subsection{Uncertainties}
+\label{subsec:Uncertainties}
+All conducted measurements in this experiment have uncertainties. Although it was possible to use the oscilloscope to measure the values very precisely, there is still an uncertainty. This is due to the difficulty to move the cursors exactly to a peak. The systematic uncertainties are shown in table \ref{tab:equipment}.
+
+% ----------------------------------------------------------------------------------
+\subsection{Uncertainty of the sound velocity $c_L$ and $c_T$}
+\label{subsec:Uncertainty_Sound_Velocity}
+The total uncertainty $s_{c,\ \text{tot}}$ of the sound velocity for a specific medium $c_m$ is calculated with the following equation \ref{eq:total_uncertainty_sound_velocity}:
+
+\begin{equation}
+s_{c,\ \text{tot}}=\sqrt{s_{c,\ \text{syst}}^2+s_{c,\ \text{stat}}^2}
+\label{eq:total_uncertainty_sound_velocity}
+\end{equation}
+
+with:
+
+\begin{equation}
+s_{c,\ \text{syst}}=\sqrt{\left(\frac{\partial c}{\partial x}\Biggr|_{c}\cdot s_{x}\right)^2 + \left(\frac{\partial c}{\partial \Delta t}\Biggr|_{c}\cdot s_{\Delta t}\right)^2}
+\label{eq:syst_uncertainty_sound_velocity}
+\end{equation}
+
+and:
+
+\[
+\frac{\partial c}{\partial x}\Biggr|_{c}=\dfrac{2}{\Delta t} \qquad , \qquad \frac{\partial c}{\partial \Delta t}\Biggr|_{c}=-\dfrac{2x}{\Delta t^2}
+\]
+
+where:
+\begin{multicols}{2}
+\begin{conditions}
+	s_{c,\ \text{tot}} & total uncertainty of $c_m$ \\
+	s_{c,\ \text{stat}} & statistical uncertainty of $c_m$ \\
+	s_{\Delta t} & uncertainty of $\Delta t$ \\
+	\Delta t & time of flight (see figure \ref{fig:measuring_procedure})
+\end{conditions}
+\begin{conditions}
+	s_{c,\ \text{syst}} & systematic uncertainty of $c_m$ \\
+	s_x & uncertainty of x \\
+	x & sound path distance \\
+	c & sound velocity $c_m$
+\end{conditions}
+\end{multicols}
+
+\hspace{0.5cm}
+
+Table \ref{tab:Uncertainty_Sound_Velocity} shows the statistical, the systematic and the total uncertainty. The systematic uncertainty was calculated by using equation \ref{eq:syst_uncertainty_sound_velocity}. The statistical uncertainty was obtained from QtiPlot. The total uncertainty was calculated by using equation \ref{eq:total_uncertainty_sound_velocity}. All calculations were done in MATLAB (see appendix \ref{sec:MATLAB_Error_Calculation}).
+
+\begin{table}[H]
+	\centering
+	\renewcommand{\arraystretch}{1.1}
+	\begin{tabular}{|l|c|c|c||c|c|c|}
+		\cline{2-7}
+		\multicolumn{1}{c|}{} & \multicolumn{3}{c||}{\textbf{1 MHz}} & \multicolumn{3}{c|}{\textbf{5 MHz}} \\
+		\cline{2-7}
+		\multicolumn{1}{c|}{} & \textbf{Statistic} & \textbf{Systematic} & \textbf{Total} & \textbf{Statistic} & \textbf{Systematic} & \textbf{Total} \\
+		\multicolumn{1}{c|}{} & in m/s & in m/s & in m/s & in m/s & in m/s & in m/s \\
+		\hline
+		\textbf{PMMA} & 4.8 & 18.5 & 19.1 & 9.8 & 18.4 & 20.9 \\
+		\hline
+		\textbf{Aluminium} & - & - & - & 30.2 & 50.6 & 58.9 \\
+		\hline
+		\textbf{Copper} & - & - & - & 16.9 & 50.6 & 53.4 \\
+		\hline
+		\textbf{Brass} & - & - & - & 45.7 & 24.6 & 51.9 \\
+		\hline
+		\textbf{Water 21 \textdegree C} & - & - & - & 2.8 & 6.3 & 7.0 \\
+		\hline
+		\textbf{Water 49 \textdegree C} & - & - & - & 4.7 & 6.9 & 8.4 \\
+		\hline
+		\textbf{Saltwater 40 \textdegree C} & - & - & - & 5.9 & 7.8 & 9.8 \\
+		\hline
+		\textbf{PMMA trans.} & 14.3 & 5.1 & 15.1 & - & - & - \\
+		\hline
+	\end{tabular}
+	\caption{The statistical uncertainty is from QtiPlot. Error propagation is used to calculate the systematic and the total uncertainty.}
+	\label{tab:Uncertainty_Sound_Velocity}
+\end{table}
+
+\newpage
+% ----------------------------------------------------------------------------------
+\subsection{Uncertainty of the attenuation coefficient $\mu$}
+\label{subsec:Uncertainty_Attenuation_Coefficient}
+The total uncertainty $s_{\mu,\ \text{tot}}$ of the attenuation coefficient for a specific medium $\mu$ is calculated with the following equation \ref{eq:total_uncertainty_attenuation_coefficient}:
+
+\begin{equation}
+s_{\mu,\ \text{tot}}=\sqrt{s_{\mu,\ \text{syst}}^2+s_{\mu,\ \text{stat}}^2}
+\label{eq:total_uncertainty_attenuation_coefficient}
+\end{equation}
+
+with:
+
+\begin{equation}
+s_{\mu,\ \text{syst}}=\sqrt{\left(\frac{\partial \mu}{\partial x}\Biggr|_{\mu}\cdot s_{x}\right)^2 + \left(\frac{\partial \mu}{\partial \hat{p}}\Biggr|_{\mu}\cdot s_{\hat{p}}\right)^2 + \left(\frac{\partial \mu}{\partial \hat{p}_0}\Biggr|_{\mu}\cdot s_{\hat{p}_0}\right)^2}
+\label{eq:syst_uncertainty_attenuation_coefficient}
+\end{equation}
+
+and:
+
+\[
+\frac{\partial \mu}{\partial x}\Biggr|_{\mu}=\dfrac{\ln{\Bigr(\frac{\hat{p}}{\hat{p}_0}\Bigr)}}{x^2} \qquad , \qquad \frac{\partial \mu}{\partial \hat{p}}\Biggr|_{\mu}=- \dfrac{1}{x\hat{p}} \qquad , \qquad \frac{\partial \mu}{\partial \hat{p}_0}\Biggr|_{\mu}=\dfrac{1}{x\hat{p}_0}
+\]
+
+where:
+\begin{multicols}{2}
+	\begin{conditions}
+		s_{\mu,\ \text{tot}} & total uncertainty of $\mu$ \\
+		s_{\mu,\ \text{stat}} & statistical uncertainty of $\mu$ \\
+		s_{\hat{p}} & uncertainty of $\hat{p}$ \\
+		x & sound path distance \\
+		\hat{p}_0 & amplitude (see figure \ref{fig:measuring_procedure})
+	\end{conditions}
+	\begin{conditions}
+		s_{\mu,\ \text{syst}} & systematic uncertainty of $\mu$ \\
+		s_x & uncertainty of x \\
+		s_{\hat{p}_0} & uncertainty of $\hat{p}_0$ \\
+		\hat{p} & amplitude (see figure \ref{fig:measuring_procedure}) \\
+		\mu & attenuation coefficient
+	\end{conditions}
+\end{multicols}
+
+\hspace{0.5cm}
+
+Table \ref{tab:Uncertainty_Attenuation_Coefficient} shows the statistical, the systematic and the total uncertainty. The systematic uncertainty was calculated by using equation \ref{eq:syst_uncertainty_attenuation_coefficient}. The statistical uncertainty was obtained from QtiPlot. The total uncertainty was calculated by using equation \ref{eq:total_uncertainty_attenuation_coefficient}. All calculations were done in MATLAB (see appendix \ref{sec:MATLAB_Error_Calculation}).
+
+\hspace{0.5cm}
+
+\begin{table}[H]
+	\centering
+	\renewcommand{\arraystretch}{1.1}
+	\begin{tabular}{|l|c|c|c||c|c|c|}
+		\cline{2-7}
+		\multicolumn{1}{c|}{} & \multicolumn{3}{c||}{\textbf{1 MHz}} & \multicolumn{3}{c|}{\textbf{5 MHz}} \\
+		\cline{2-7}
+		\multicolumn{1}{c|}{} & \textbf{Statistic} & \textbf{Systematic} & \textbf{Total} & \textbf{Statistic} & \textbf{Systematic} & \textbf{Total} \\
+		\multicolumn{1}{c|}{} & in m/s & in m/s & in m/s & in m/s & in m/s & in m/s \\
+		\hline
+		\textbf{PMMA} & 0.7 & 2.6 & 2.6 & 2.5 & 5.8 & 6.3 \\
+		\hline
+	\end{tabular}
+	\caption{The statistical uncertainty is from QtiPlot. Error propagation is used to calculate the systematic and the total uncertainty.}
+	\label{tab:Uncertainty_Attenuation_Coefficient}
+\end{table}

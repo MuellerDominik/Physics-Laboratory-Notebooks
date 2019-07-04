@@ -1,0 +1,88 @@
+\documentclass[final]{header/fhnwreport}
+
+\input{header/header}
+
+\makeatletter
+\newcommand{\vect}{\mathpalette{\overarrowsmall@\rightharpoonfill@}}
+\def\rightharpoonfill@{\arrowfill@\relbar\relbar\rightharpoonup}
+\newcommand{\overarrowsmall@}[3]{
+	\vbox{
+		\ialign{
+			##\crcr
+			#1{\smaller@style{#2}}\crcr
+			\noalign{\nointerlineskip}
+			$\m@th\hfil#2#3\hfil$\crcr
+		}
+	}
+}
+\def\smaller@style#1{
+	\ifx#1\displaystyle\scriptstyle\else
+	\ifx#1\textstyle\scriptstyle\else
+	\scriptscriptstyle
+	\fi
+	\fi
+}
+\makeatother
+
+\newenvironment{conditions}
+{\par\vspace{\abovedisplayskip}\noindent\begin{tabular}{>{$}l<{$} @{${}={}$} l}}
+	{\end{tabular}\par\vspace{\belowdisplayskip}}
+
+\title{\textbf{{\Huge E 6 - Magnetic Fields}}}
+\author{{\Huge Physics Laboratory Report}}
+\date{{\LARGE Windisch, \the\day.\MONTH \the\year}}
+
+\begin{document}
+
+% Physics Laboratory Notebook
+\input{sections/physics_laboratory_notebook}
+
+% Title
+\selectlanguage{English}
+\maketitle
+\vfill
+\begin{LARGE}
+	\begin{tabularx}{\textwidth}{l p{0cm} X}
+		\hline
+		& & \\
+		\textbf{Experiment Leader:} & & Dominik Müller \\
+		\textbf{Assistant:} & & Simon Burkhardt \\
+	\end{tabularx}
+\end{LARGE}
+\clearpage
+
+% Contents
+\pagenumbering{Roman}		
+\selectlanguage{English}
+\tableofcontents
+\clearpage
+
+% Text
+\pagenumbering{arabic}
+\selectlanguage{English}
+\include{sections/theoretical_foundations}
+\include{sections/conducting_experiments}
+\include{sections/evaluation}
+\include{sections/error_calculation}
+\include{sections/results_discussion}
+
+% Bibliography
+\printbibliography[heading=bibintoc]
+\label{sec:literature}
+
+% Glossary
+\printglossaries
+
+% Appendix
+\include{sections/appendix}
+
+% Debug
+\ifdraft{
+	\newpage
+	\listoftodos[\section{To-Do}]
+	\clearpage
+}
+{
+}
+
+\end{document}

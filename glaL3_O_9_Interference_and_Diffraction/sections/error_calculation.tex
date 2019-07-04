@@ -1,0 +1,190 @@
+\section{Error Calculation}
+\label{sec:Error_Calculation}
+This section contains the error calculation of the measured values. The error calculation is done for the fitted values width $w$, diameter $d$ and grid constant $g$ (see sections \ref{subsec:Slit} to \ref{subsec:Cross-Grid}).
+
+\subsection{Uncertainties}
+\label{subsec:Uncertainties}
+All conducted measurements in this experiment have uncertainties. Although it was possible to read the position on the y-axis to half a millimeter, the uncertainty is still one millimeter. This is due to the difficulty to find the exact center of the minima or maxima. The systematic uncertainties are shown in table \ref{tab:equipment} ($s_x = 1$ mm and $s_y = 1$ mm).
+
+\subsection{Uncertainty of the Angle $\varphi$}
+\label{subsec:Uncertainty_Angle}
+The uncertainty $s_\varphi$ of the angle $\varphi$ is calculated with the following equation \ref{eq:uncertainty_angle}:
+
+\begin{equation}
+s_{\varphi}=\sqrt{\left(\frac{\partial \varphi}{\partial x}\Biggr|_{\varphi}\cdot s_{x}\right)^2 + \left(\frac{\partial \varphi}{\partial y}\Biggr|_{\varphi}\cdot s_{y}\right)^2}
+\label{eq:uncertainty_angle}
+\end{equation}
+
+with:
+
+\[
+\frac{\partial \varphi}{\partial x}\Biggr|_{\varphi}=-\frac{y}{x^2+y^2} \qquad , \qquad \frac{\partial \varphi}{\partial y}\Biggr|_{\varphi}=\frac{x}{x^2+y^2}
+\]
+
+where:
+\begin{conditions}
+	s_{\varphi} & uncertainty of $\varphi$ \\
+	s_x & uncertainty of x \\
+	s_y & uncertainty of y \\
+	x & distance between the aperture and the projection surface (see figure \ref{fig:experimental_arrangement}) \\
+	y & position of the maxima or the minima
+\end{conditions}
+
+\subsection{Uncertainty of the Width $w$}
+\label{subsec:Uncertainty_Width}
+To derive the total uncertainty of the width $w$ the following equations are used. The statistical uncertainty $s_{w,\ \text{stat}}$ is obtained from the fits (from QtiPlot).
+
+\begin{equation}
+s_{w,\ \text{tot}}=\sqrt{s_{w,\ \text{syst}}^2+s_{w,\ \text{stat}}^2}
+\label{eq:total_uncertainty_w}
+\end{equation}
+
+with:
+\begin{equation}
+s_{w,\ \text{syst}}=\sqrt{\left(\frac{\partial w}{\partial \varphi}\Biggr|_{w}\cdot s_{\varphi}\right)^2}
+\label{eq:syst_uncertainty_w}
+\end{equation}
+
+where:
+\begin{conditions}
+	s_{w,\ \text{tot}} & total uncertainty of $w$ \\
+	s_{w,\ \text{syst}} & systematic uncertainty of $w$ \\
+	s_{w,\ \text{stat}} & statistical uncertainty of $w$ \\
+	s_{\varphi} & uncertainty of $\varphi$
+\end{conditions}
+
+\addtocontents{toc}{\protect\setcounter{tocdepth}{2}}
+\subsubsection{Calculated Uncertainties of the Width $w$ (Slit)}
+\label{subsubsec:Uncertainty_Width_Slit}
+\addtocontents{toc}{\protect\setcounter{tocdepth}{3}}
+The systematic uncertainty was calculated by using equation \ref{eq:slit_maxima} and equation \ref{eq:syst_uncertainty_w}. The statistical uncertainty was obtained from table \ref{tab:Slit}. The total uncertainty was calculated by using equation \ref{eq:total_uncertainty_w}. All calculations were done in MATLAB (see appendix \ref{sec:MATLAB_Error_Calculation}).
+
+\begin{table}[H]
+	\centering
+	\renewcommand{\arraystretch}{1.3}
+	\begin{tabular}{r||c|c|c}
+		& \textbf{Systematic} ($\mu$m) & \textbf{Statistical} ($\mu$m) & \textbf{Total} ($\mu$m) \\
+		\hline\hline
+		\textbf{Slit 40 $\mu$m} & -0.92 & 0.10 & 0.93 \\
+		\textbf{Slit 100 $\mu$m} & -6.77 & 0.14 & 6.77 \\
+	\end{tabular}
+	\caption{Calculated Uncertainties for the Width $w$ of the Slit}
+	\label{tab:Calculated_Uncertainties_Width_Slit}
+\end{table}
+
+To calculate the uncertainty of the 40 $\mu$m slit and the 100 $\mu$m slit the 1st order ($m = 1$) was used. It is generally best to use a low order number (greater uncertainty).
+
+\addtocontents{toc}{\protect\setcounter{tocdepth}{2}}
+\subsubsection{Calculated Uncertainties of the Width $w$ (Anti-Slit)}
+\label{subsubsec:Uncertainty_Width_Anti-Slit}
+\addtocontents{toc}{\protect\setcounter{tocdepth}{3}}
+The systematic uncertainty was calculated by using equation \ref{eq:slit_maxima} and equation \ref{eq:syst_uncertainty_w}. The statistical uncertainty was obtained from table \ref{tab:Anti-Slit}. The total uncertainty was calculated by using equation \ref{eq:total_uncertainty_w}. All calculations were done in MATLAB (see appendix \ref{sec:MATLAB_Error_Calculation}).
+
+\begin{table}[H]
+	\centering
+	\renewcommand{\arraystretch}{1.3}
+	\begin{tabular}{r||c|c|c}
+		& \textbf{Systematic} ($\mu$m) & \textbf{Statistical} ($\mu$m) & \textbf{Total} ($\mu$m) \\
+		\hline\hline
+		\textbf{Anti-Slit 230 $\mu$m} & -23.33 & 0.34 & 23.34 \\
+		\textbf{Anti-Slit 124 $\mu$m} & -6.80 & 0.08 & 6.80 \\
+	\end{tabular}
+	\caption{Calculated Uncertainties for the Width $w$ of the Anti-Slit}
+	\label{tab:Calculated_Uncertainties_Width_Anti-Slit}
+\end{table}
+
+To calculate the uncertainty of the 230 $\mu$m anti-slit the 6th order was used. To calculate the uncertainty of the 124 $\mu$m anti-slit the 1st order was used.It is generally best to use a low order number (greater uncertainty).
+
+\newpage
+
+\subsection{Uncertainty of the Diameter $d$}
+\label{subsec:Uncertainty_Diameter}
+To derive the total uncertainty of the diameter $d$ the following equations are used. The statistical uncertainty $s_{d,\ \text{stat}}$ is obtained from the fits (from QtiPlot).
+
+\begin{equation}
+s_{d,\ \text{tot}}=\sqrt{s_{d,\ \text{syst}}^2+s_{d,\ \text{stat}}^2}
+\label{eq:total_uncertainty_d}
+\end{equation}
+
+with:
+\begin{equation}
+s_{d,\ \text{syst}}=\sqrt{\left(\frac{\partial d}{\partial \varphi}\Biggr|_{d}\cdot s_{\varphi}\right)^2}
+\label{eq:syst_uncertainty_d}
+\end{equation}
+
+where:
+\begin{conditions}
+	s_{d,\ \text{tot}} & total uncertainty of $d$ \\
+	s_{d,\ \text{syst}} & systematic uncertainty of $d$ \\
+	s_{d,\ \text{stat}} & statistical uncertainty of $d$ \\
+	s_{\varphi} & uncertainty of $\varphi$
+\end{conditions}
+
+\addtocontents{toc}{\protect\setcounter{tocdepth}{2}}
+\subsubsection{Calculated Uncertainties of the Diameter $d$ (Circular Aperture)}
+\label{subsubsec:Uncertainty_Diameter_Circular-Aperture}
+\addtocontents{toc}{\protect\setcounter{tocdepth}{3}}
+
+The systematic uncertainty was calculated by using equation \ref{eq:circular_aperture} and equation \ref{eq:syst_uncertainty_d}. The statistical uncertainty was obtained from table \ref{tab:Circular_Apertures}. The total uncertainty was calculated by using equation \ref{eq:total_uncertainty_d}. All calculations were done in MATLAB (see appendix \ref{sec:MATLAB_Error_Calculation}).
+
+\begin{table}[H]
+	\centering
+	\renewcommand{\arraystretch}{1.3}
+	\begin{tabular}{r||c|c|c}
+		& \textbf{Systematic} ($\mu$m) & \textbf{Statistical} ($\mu$m) & \textbf{Total} ($\mu$m) \\
+		\hline\hline
+		\textbf{Circular Aperture 150 $\mu$m} & -10.21 & 0.83 & 10.24 \\
+		\textbf{Circular Aperture 100 $\mu$m} & -4.57 & 0.55 & 4.60 \\
+	\end{tabular}
+	\caption{Calculated Uncertainties for the Diameter $d$}
+	\label{tab:Calculated_Uncertainties_Diameter}
+\end{table}
+
+To calculate the uncertainty of the 150 $\mu$m circular aperture and the 100 $\mu$m circular aperture the 2nd Bessel coefficient ($c = 2.233$) was used (see table \ref{eq:coeffs}). It is generally best to use a low "order" number (greater uncertainty).
+
+\newpage
+
+\subsection{Uncertainty of the Grid Constant $g$}
+\label{subsec:Uncertainty_Grid_Constant}
+To derive the total uncertainty of the grid constant $g$ the following equations are used. The statistical uncertainty $s_{g,\ \text{stat}}$ is obtained from the fits (from QtiPlot).
+
+\begin{equation}
+s_{g,\ \text{tot}}=\sqrt{s_{g,\ \text{syst}}^2+s_{g,\ \text{stat}}^2}
+\label{eq:total_uncertainty_g}
+\end{equation}
+
+with:
+\begin{equation}
+s_{g,\ \text{syst}}=\sqrt{\left(\frac{\partial g}{\partial \varphi}\Biggr|_{g}\cdot s_{\varphi}\right)^2}
+\label{eq:syst_uncertainty_g}
+\end{equation}
+
+where:
+\begin{conditions}
+	s_{g,\ \text{tot}} & total uncertainty of $g$ \\
+	s_{g,\ \text{syst}} & systematic uncertainty of $g$ \\
+	s_{g,\ \text{stat}} & statistical uncertainty of $g$ \\
+	s_{\varphi} & uncertainty of $\varphi$
+\end{conditions}
+
+\addtocontents{toc}{\protect\setcounter{tocdepth}{2}}
+\subsubsection{Calculated Uncertainties of the Grid Constant $g$ (Cross-Grid)}
+\label{subsubsec:Uncertainty_Grid_Constant_Cross-Grid}
+\addtocontents{toc}{\protect\setcounter{tocdepth}{3}}
+
+The systematic uncertainty was calculated by using equation \ref{eq:cross-grid} and equation \ref{eq:syst_uncertainty_g}. The statistical uncertainty was obtained from table \ref{tab:Cross-Grid}. The total uncertainty was calculated by using equation \ref{eq:total_uncertainty_g}. All calculations were done in MATLAB (see appendix \ref{sec:MATLAB_Error_Calculation}).
+
+\begin{table}[H]
+	\centering
+	\renewcommand{\arraystretch}{1.3}
+	\begin{tabular}{r||c|c|c}
+		 & \textbf{Systematic} ($\mu$m) & \textbf{Statistical} ($\mu$m) & \textbf{Total} ($\mu$m) \\
+		\hline\hline
+		\textbf{Cross-Grid 28 $\mu$m} & -0.36 & 0.44 & 0.57 \\
+		\textbf{Cross-Grid 50 $\mu$m} & -0.30 & 0.06 & 0.30 \\
+	\end{tabular}
+	\caption{Calculated Uncertainties for the Grid Constant $g$}
+	\label{tab:Calculated_Uncertainties_Grid_Constant}
+\end{table}
+
+To calculate the uncertainty of the 28 $\mu$m cross-grid and the 50 $\mu$m cross-grid the 1st order ($m = 1$) was used. It is generally best to use a low order number (greater uncertainty).

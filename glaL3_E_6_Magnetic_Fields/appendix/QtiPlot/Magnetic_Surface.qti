@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE qti>
+<qti app="QtiPlot" version="0.9.9.2" dpi="96" arch="Win64" script="muParser" windows="2" expand="1" log="[12.11.2018 03:30:46&#9;Plot: ''Graph1'']&#10;Polynomial Fit of dataset: Table1_Magnetic Flux Density, using function: a0+a1*x+a2*x^2&#10;Sort: No&#10;Weighting Method: Instrumental, using error bars dataset: Table1_3&#10;From x = 6.000000e-01 to x = 1.560000e+00 (13 data points)&#10;--------------------------------------------------------------------------------------&#10;a0 = -2.757122e-06 +/- 3.510945e-10&#10;a1 = 5.308816e-06 +/- 6.839689e-10&#10;a2 = -1.989417e-06 +/- 3.142900e-10&#10;--------------------------------------------------------------------------------------&#10;Chi^2/doF = 2.270697e+06&#10;R^2 = 1&#10;Adjusted R^2 = 0.855797&#10;RMSE (Root Mean Squared Error) = 1'506.88&#10;RSS (Residual Sum of Squares) = 2.2707e+07&#10;---------------------------------------------------------------------------------------&#10;[12.11.2018 03:30:50&#9;Plot: ''Graph1'']&#10;Polynomial Fit of dataset: Table1_Magnetic Flux Density, using function: a0+a1*x+a2*x^2+a3*x^3&#10;Sort: No&#10;Weighting Method: Instrumental, using error bars dataset: Table1_3&#10;From x = 6.000000e-01 to x = 1.560000e+00 (13 data points)&#10;--------------------------------------------------------------------------------------&#10;a0 = 1.541824e-06 +/- 1.376941e-09&#10;a1 = -7.898361e-06 +/- 4.147189e-09&#10;a2 = 1.082541e-05 +/- 3.981308e-09&#10;a3 = -3.955192e-06 +/- 1.224964e-09&#10;--------------------------------------------------------------------------------------&#10;Chi^2/doF = 1.364630e+06&#10;R^2 = 1&#10;Adjusted R^2 = 0.912255&#10;RMSE (Root Mean Squared Error) = 1'168.17&#10;RSS (Residual Sum of Squares) = 1.22817e+07&#10;---------------------------------------------------------------------------------------&#10;[12.11.2018 03:30:53&#9;Plot: ''Graph1'']&#10;Polynomial Fit of dataset: Table1_Magnetic Flux Density, using function: a0+a1*x+a2*x^2+a3*x^3+a4*x^4&#10;Sort: No&#10;Weighting Method: Instrumental, using error bars dataset: Table1_3&#10;From x = 6.000000e-01 to x = 1.560000e+00 (13 data points)&#10;--------------------------------------------------------------------------------------&#10;a0 = 2.031045e-05 +/- 5.590919e-09&#10;a1 = -8.534044e-05 +/- 2.273975e-08&#10;a2 = 1.260694e-04 +/- 3.350955e-08&#10;a3 = -7.746552e-05 +/- 2.125856e-08&#10;a4 = 1.701628e-05 +/- 4.912786e-09&#10;--------------------------------------------------------------------------------------&#10;Chi^2/doF = 3.558098e+04&#10;R^2 = 1&#10;Adjusted R^2 = 0.997676&#10;RMSE (Root Mean Squared Error) = 188.629&#10;RSS (Residual Sum of Squares) = 284'648&#10;---------------------------------------------------------------------------------------&#10;[12.11.2018 03:31:01&#9;Plot: ''Graph1'']&#10;Polynomial Fit of dataset: Table1_Magnetic Flux Density, using function: a0+a1*x+a2*x^2+a3*x^3+a4*x^4+a5*x^5&#10;Sort: No&#10;Weighting Method: Instrumental, using error bars dataset: Table1_3&#10;From x = 6.000000e-01 to x = 1.560000e+00 (13 data points)&#10;--------------------------------------------------------------------------------------&#10;a0 = 2.900602e-05 +/- 2.355867e-08&#10;a1 = -1.303064e-04 +/- 1.205097e-07&#10;a2 = 2.163337e-04 +/- 2.399163e-07&#10;a3 = -1.655011e-04 +/- 2.326720e-07&#10;a4 = 5.880534e-05 +/- 1.100933e-07&#10;a5 = -7.738715e-06 +/- 2.036734e-08&#10;--------------------------------------------------------------------------------------&#10;Chi^2/doF = 2.004005e+04&#10;R^2 = 1&#10;Adjusted R^2 = 0.998664&#10;RMSE (Root Mean Squared Error) = 141.563&#10;RSS (Residual Sum of Squares) = 140'280&#10;---------------------------------------------------------------------------------------&#10;[12.11.2018 03:32:03&#9;Plot: ''Graph1'']&#10;Polynomial Fit of dataset: Table1_Magnetic Flux Density, using function: a0+a1*x+a2*x^2+a3*x^3+a4*x^4&#10;Sort: No&#10;Weighting Method: Instrumental, using error bars dataset: Table1_3&#10;From x = 6.000000e-01 to x = 1.560000e+00 (13 data points)&#10;--------------------------------------------------------------------------------------&#10;a0 = 2.031045e-05 +/- 5.590919e-09&#10;a1 = -8.534044e-05 +/- 2.273975e-08&#10;a2 = 1.260694e-04 +/- 3.350955e-08&#10;a3 = -7.746552e-05 +/- 2.125856e-08&#10;a4 = 1.701628e-05 +/- 4.912786e-09&#10;--------------------------------------------------------------------------------------&#10;Chi^2/doF = 3.558098e+04&#10;R^2 = 1&#10;Adjusted R^2 = 0.997676&#10;RMSE (Root Mean Squared Error) = 188.629&#10;RSS (Residual Sum of Squares) = 284'648&#10;---------------------------------------------------------------------------------------&#10;[12.11.2018 03:32:07&#9;Plot: ''Graph1'']&#10;Polynomial Fit of dataset: Table1_Magnetic Flux Density, using function: a0+a1*x+a2*x^2+a3*x^3+a4*x^4+a5*x^5&#10;Sort: No&#10;Weighting Method: Instrumental, using error bars dataset: Table1_3&#10;From x = 6.000000e-01 to x = 1.560000e+00 (13 data points)&#10;--------------------------------------------------------------------------------------&#10;a0 = 2.900602e-05 +/- 2.355867e-08&#10;a1 = -1.303064e-04 +/- 1.205097e-07&#10;a2 = 2.163337e-04 +/- 2.399163e-07&#10;a3 = -1.655011e-04 +/- 2.326720e-07&#10;a4 = 5.880534e-05 +/- 1.100933e-07&#10;a5 = -7.738715e-06 +/- 2.036734e-08&#10;--------------------------------------------------------------------------------------&#10;Chi^2/doF = 2.004005e+04&#10;R^2 = 1&#10;Adjusted R^2 = 0.998664&#10;RMSE (Root Mean Squared Error) = 141.563&#10;RSS (Residual Sum of Squares) = 140'280&#10;---------------------------------------------------------------------------------------&#10;[12.11.2018 03:32:09&#9;Plot: ''Graph1'']&#10;Polynomial Fit of dataset: Table1_Magnetic Flux Density, using function: a0+a1*x+a2*x^2+a3*x^3+a4*x^4+a5*x^5+a6*x^6&#10;Sort: No&#10;Weighting Method: Instrumental, using error bars dataset: Table1_3&#10;From x = 6.000000e-01 to x = 1.560000e+00 (13 data points)&#10;--------------------------------------------------------------------------------------&#10;a0 = 2.137052e-05 +/- 1.038474e-07&#10;a1 = -8.291207e-05 +/- 6.392478e-07&#10;a2 = 9.666504e-05 +/- 1.603186e-06&#10;a3 = -8.064708e-06 +/- 2.098344e-06&#10;a4 = -5.512506e-05 +/- 1.513134e-06&#10;a5 = 3.530949e-05 +/- 5.705807e-07&#10;a6 = -6.643242e-06 +/- 8.799645e-08&#10;--------------------------------------------------------------------------------------&#10;Chi^2/doF = 2.243016e+04&#10;R^2 = 1&#10;Adjusted R^2 = 0.998462&#10;RMSE (Root Mean Squared Error) = 149.767&#10;RSS (Residual Sum of Squares) = 134'581&#10;---------------------------------------------------------------------------------------&#10;[12.11.2018 03:34:41&#9;Plot: ''Graph1'']&#10;Polynomial Fit of dataset: Table1_Magnetic Flux Density, using function: a0+a1*x+a2*x^2+a3*x^3+a4*x^4+a5*x^5&#10;Sort: No&#10;Weighting Method: Instrumental, using error bars dataset: Table1_3&#10;From x = 6.000000e-01 to x = 1.560000e+00 (13 data points)&#10;--------------------------------------------------------------------------------------&#10;a0 = 2.900602e-05 +/- 2.355867e-08&#10;a1 = -1.303064e-04 +/- 1.205097e-07&#10;a2 = 2.163337e-04 +/- 2.399163e-07&#10;a3 = -1.655011e-04 +/- 2.326720e-07&#10;a4 = 5.880534e-05 +/- 1.100933e-07&#10;a5 = -7.738715e-06 +/- 2.036734e-08&#10;--------------------------------------------------------------------------------------&#10;Chi^2/doF = 2.004005e+04&#10;R^2 = 1&#10;Adjusted R^2 = 0.998664&#10;RMSE (Root Mean Squared Error) = 141.563&#10;RSS (Residual Sum of Squares) = 140'280&#10;---------------------------------------------------------------------------------------&#10;[12.11.2018 03:35:48&#9;Plot: ''Graph1'']&#10;Polynomial Fit of dataset: Table1_Magnetic Flux Density, using function: a0+a1*x+a2*x^2+a3*x^3+a4*x^4+a5*x^5&#10;Sort: No&#10;Weighting Method: Instrumental, using error bars dataset: Table1_3&#10;From x = 6.000000e-01 to x = 1.560000e+00 (13 data points)&#10;--------------------------------------------------------------------------------------&#10;a0 = 2.900602e-05 +/- 2.355867e-08&#10;a1 = -1.303064e-04 +/- 1.205097e-07&#10;a2 = 2.163337e-04 +/- 2.399163e-07&#10;a3 = -1.655011e-04 +/- 2.326720e-07&#10;a4 = 5.880534e-05 +/- 1.100933e-07&#10;a5 = -7.738715e-06 +/- 2.036734e-08&#10;--------------------------------------------------------------------------------------&#10;Chi^2/doF = 2.004005e+04&#10;R^2 = 1&#10;Adjusted R^2 = 0.998664&#10;RMSE (Root Mean Squared Error) = 141.563&#10;RSS (Residual Sum of Squares) = 140'280&#10;---------------------------------------------------------------------------------------&#10;">
+	<window type="1" name="Table1" date="2458434.1059958" x="0" y="0" w="407" h="560">
+		<tab rows="30" cols="3" labels="3">
+			<col name="Absolute Position" type="6" num="0" prec="6" plot="1" width="100" stat="0" lname="Absolute Position z" unit="m" data="0.6;0.68;0.76;0.84;0.92;1;1.08;1.16;1.24;1.32;1.4;1.48;1.56;"/>
+			<col name="Magnetic Flux Density" type="6" num="0" prec="6" plot="2" width="100" stat="0" lname="Magnetic Flux Density Bz" unit="T" data="-3e-08;-1.5e-07;-7e-08;1.3e-07;3.8e-07;6.2e-07;7.5e-07;8.4e-07;8.4e-07;8.2e-07;7.5e-07;6.7e-07;6.6e-07;"/>
+			<col name="3" type="6" num="0" prec="6" plot="5" width="100" stat="0" data="-9e-11;-4.5e-10;-2.1e-10;3.9e-10;1.14e-09;1.86e-09;2.25e-09;2.52e-09;2.52e-09;2.46e-09;2.25e-09;2.01e-09;1.98e-09;"/>
+		</tab>
+	</window>
+	<window type="3" name="Graph1" date="2458434.1445679" x="407" y="0" w="511" h="458" active="1" dpi="96">
+		<layout cw="497" ch="400" w="400" h="300" left="5" right="5" top="5" bottom="5" rows="1" cols="1" vSpace="5" hSpace="5" hAlign="0" vAlign="0" align="0" common="0" link="0" scale="1" sPrint="0" cmPrint="0" atUnits="1" atdIndex="0" atPolicy="4" alMode="0" luMode="2"/>
+		<tab x="5" y="5" w="487" h="379" autoscale="1" gap="1">
+			<page x="0.0100604" y="0.0125" w="0.979879" h="0.9475"/>
+			<title text="Magnetic Surface" color="#000000" font="Lucida Sans Unicode,10,-1,5,75,0,0,0,0,0" align="4228" fmw="123"/>
+			<frame bg="#ffffff,0"/>
+			<canvas x="73" y="46" w="400" h="300" fixRatio="1.33333" bg="#ffffff,0"/>
+			<grid xAxis="2" yAxis="0">
+				<majx lc="#a0a0a4" lw="1" ls="0"/>
+				<minx lc="#a0a0a4" lw="1" ls="0"/>
+				<majy lc="#a0a0a4" lw="1" ls="0"/>
+				<miny lc="#a0a0a4" lw="1" ls="0"/>
+			</grid>
+			<curve type="1" z="21" table="Table1" x="Absolute Position" y="Magnetic Flux Density" from="0" to="-1" line="0" lc="#000000" lw="1" ls="0" brc="#000000" brs="0">
+				<symbol style="1" size="7" lc="#000000" lw="1" ls="0" brc="#000000"/>
+				<errors type="1" z="22" table="Table1" col="3" from="0" to="-1" lw="1" lc="#0000ff" cap="8" plus="1" minus="1" symb="1"/>
+			</curve>
+			<curve type="19" z="23" name="PolynomialFit1" f="0" y="a0+a1*x+a2*x^2" from="0.6" to="1.56" points="100" line="1" lc="#ff0000" lw="1" ls="0" brc="#000000" brs="0" on="0">
+				<param name="a0" val="-2.75712162837164e-06"/>
+				<param name="a1" val="5.30881618381621e-06"/>
+				<param name="a2" val="-1.98941683316685e-06"/>
+			</curve>
+			<curve type="19" z="24" name="PolynomialFit2" f="0" y="a0+a1*x+a2*x^2+a3*x^3" from="0.6" to="1.56" points="100" line="1" lc="#ff0000" lw="1" ls="0" brc="#000000" brs="0" on="0">
+				<param name="a0" val="1.54182395729273e-06"/>
+				<param name="a1" val="-7.89836075382952e-06"/>
+				<param name="a2" val="1.08254050636863e-05"/>
+				<param name="a3" val="-3.95519194347319e-06"/>
+			</curve>
+			<curve type="19" z="25" name="PolynomialFit3" f="0" y="a0+a1*x+a2*x^2+a3*x^3+a4*x^4" from="0.6" to="1.56" points="100" line="1" lc="#ff0000" lw="1" ls="0" brc="#000000" brs="0" on="0">
+				<param name="a0" val="2.03104535193656e-05"/>
+				<param name="a1" val="-8.53404437168165e-05"/>
+				<param name="a2" val="0.000126069378117277"/>
+				<param name="a3" val="-7.7465522375902e-05"/>
+				<param name="a4" val="1.70162801926918e-05"/>
+			</curve>
+			<curve type="19" z="26" name="PolynomialFit4" f="0" y="a0+a1*x+a2*x^2+a3*x^3+a4*x^4+a5*x^5" from="0.6" to="1.56" points="100" line="1" lc="#ff0000" lw="1" ls="0" brc="#000000" brs="0" on="0">
+				<param name="a0" val="2.9006016472581e-05"/>
+				<param name="a1" val="-0.000130306406768048"/>
+				<param name="a2" val="0.000216333745958461"/>
+				<param name="a3" val="-0.000165501140393853"/>
+				<param name="a4" val="5.88053393784316e-05"/>
+				<param name="a5" val="-7.73871466402653e-06"/>
+			</curve>
+			<curve type="19" z="27" name="PolynomialFit5" f="0" y="a0+a1*x+a2*x^2+a3*x^3+a4*x^4" from="0.6" to="1.56" points="100" line="1" lc="#ff0000" lw="2" ls="0" brc="#000000" brs="0">
+				<param name="a0" val="2.03104535193656e-05"/>
+				<param name="a1" val="-8.53404437168165e-05"/>
+				<param name="a2" val="0.000126069378117277"/>
+				<param name="a3" val="-7.7465522375902e-05"/>
+				<param name="a4" val="1.70162801926918e-05"/>
+			</curve>
+			<curve type="19" z="28" name="PolynomialFit6" f="0" y="a0+a1*x+a2*x^2+a3*x^3+a4*x^4+a5*x^5" from="0.6" to="1.56" points="100" line="1" lc="#ff0000" lw="1" ls="0" brc="#000000" brs="0" on="0">
+				<param name="a0" val="2.9006016472581e-05"/>
+				<param name="a1" val="-0.000130306406768048"/>
+				<param name="a2" val="0.000216333745958461"/>
+				<param name="a3" val="-0.000165501140393853"/>
+				<param name="a4" val="5.88053393784316e-05"/>
+				<param name="a5" val="-7.73871466402653e-06"/>
+			</curve>
+			<curve type="19" z="29" name="PolynomialFit7" f="0" y="a0+a1*x+a2*x^2+a3*x^3+a4*x^4+a5*x^5+a6*x^6" from="0.6" to="1.56" points="100" line="1" lc="#ff0000" lw="1" ls="0" brc="#000000" brs="0" on="0">
+				<param name="a0" val="2.13705233109763e-05"/>
+				<param name="a1" val="-8.29120688634731e-05"/>
+				<param name="a2" val="9.66650369827399e-05"/>
+				<param name="a3" val="-8.06470833940218e-06"/>
+				<param name="a4" val="-5.51250555020121e-05"/>
+				<param name="a5" val="3.53094944189457e-05"/>
+				<param name="a6" val="-6.64324214243867e-06"/>
+			</curve>
+			<curve type="19" z="30" name="PolynomialFit8" f="0" y="a0+a1*x+a2*x^2+a3*x^3+a4*x^4+a5*x^5" from="0.6" to="1.56" points="100" line="1" lc="#ff0000" lw="2" ls="0" brc="#000000" brs="0" on="0">
+				<param name="a0" val="2.9006016472581e-05"/>
+				<param name="a1" val="-0.000130306406768048"/>
+				<param name="a2" val="0.000216333745958461"/>
+				<param name="a3" val="-0.000165501140393853"/>
+				<param name="a4" val="5.88053393784316e-05"/>
+				<param name="a5" val="-7.73871466402653e-06"/>
+			</curve>
+			<curve type="19" z="31" name="PolynomialFit9" comment="Polynomial Fit (4th Order)" f="0" y="a0+a1*x+a2*x^2+a3*x^3+a4*x^4+a5*x^5" from="0.6" to="1.56" points="100" line="1" lc="#ff0000" lw="1" ls="0" brc="#000000" brs="0" on="0">
+				<param name="a0" val="2.9006016472581e-05"/>
+				<param name="a1" val="-0.000130306406768048"/>
+				<param name="a2" val="0.000216333745958461"/>
+				<param name="a3" val="-0.000165501140393853"/>
+				<param name="a4" val="5.88053393784316e-05"/>
+				<param name="a5" val="-7.73871466402653e-06"/>
+			</curve>
+			<axis id="0" on="1" type="0" format="0" prec="6" lw="1">
+				<div from="-4e-07" to="1e-06" step="0" maj="8" min="5" type="0"/>
+				<ticks maj="3" majl="9" min="3" minl="5"/>
+				<title text="%(?Y)" color="#000000" font="Lucida Sans Unicode,8,-1,5,75,0,0,0,0,0" align="5124" space="2" fmw="32"/>
+				<labels space="4" font="Lucida Sans Unicode,8,-1,5,50,0,0,0,0,0"/>
+			</axis>
+			<axis id="1" on="1" type="0" format="0" prec="6" lw="1">
+				<div from="-4e-07" to="1e-06" step="0" maj="8" min="5" type="0"/>
+				<ticks maj="3" majl="9" min="3" minl="5"/>
+				<title text=" " color="#000000" font="Lucida Sans Unicode,8,-1,5,75,0,0,0,0,0" align="5124" space="2" fmw="4"/>
+			</axis>
+			<axis id="2" on="1" type="0" format="0" prec="6" lw="1">
+				<div from="0.56" to="1.6" step="0" maj="6" min="5" type="0"/>
+				<ticks maj="3" majl="9" min="3" minl="5"/>
+				<title text="%(?X)" color="#000000" font="Lucida Sans Unicode,8,-1,5,75,0,0,0,0,0" align="5124" space="2" fmw="32"/>
+				<labels space="4" font="Lucida Sans Unicode,8,-1,5,50,0,0,0,0,0"/>
+			</axis>
+			<axis id="3" on="1" type="0" format="0" prec="6" lw="1">
+				<div from="0.56" to="1.6" step="0" maj="6" min="5" type="0"/>
+				<ticks maj="3" majl="9" min="3" minl="5"/>
+				<title text="Gaussmeter was zeroed at z = 0.6 m " color="#000000" font="Lucida Sans Unicode,8,-1,5,75,0,0,0,0,0" align="5124" space="2" fmw="234"/>
+			</axis>
+			<item type="2" x="1.00310776942356" y="-1.05016722408027e-07" frame="1" lc="#000000" lw="1" ls="0" bg="#ffffff" brc="#000000" brs="0" onTop="1" at="0" on="1" auto="1" font="Lucida Sans Unicode,8,-1,5,50,0,0,0,0,0" text="\l(1)%(1)&#10;\l(10)%(10)"/>
+		</tab>
+	</window>
+</qti>
