@@ -3,20 +3,30 @@
 
 ## Downloads
 
+The `.pdf` files can be downloaded from here directly. No need for compilation.
+
 ### Module glaL3
 
-| Label | Name                         | Link                                     | Version             |
-|:----- |:---------------------------- |:---------------------------------------- |:------------------- |
-| C     | Evaluation with Computer     | [Download][Evaluation with Computer]     | ![Version][Version] |
-| E 6   | Magnetic Fields              | [Download][Magnetic Fields]              | ![Version][Version] |
-| O 9   | Interference and Diffraction | [Download][Interference and Diffraction] | ![Version][Version] |
+| #   | Name                         | Link                                     | Version             |
+|:--- |:---------------------------- |:---------------------------------------- |:------------------- |
+| C   | Evaluation with Computer     | [Download][Evaluation with Computer]     | ![Version][Version] |
+| E 6 | Magnetic Fields              | [Download][Magnetic Fields]              | ![Version][Version] |
+| O 9 | Interference and Diffraction | [Download][Interference and Diffraction] | ![Version][Version] |
 
 ### Module glaL4
 
-| Label | Name          | Link                      | Version             |
-|:----- |:------------- |:------------------------- |:------------------- |
-| W 12  | Ultrasound    | [Download][Ultrasound]    | ![Version][Version] |
-| A 8   | Light Quantum | [Download][Light Quantum] | ![Version][Version] |
+| #    | Name          | Link                      | Version             |
+|:---- |:------------- |:------------------------- |:------------------- |
+| W 12 | Ultrasound    | [Download][Ultrasound]    | ![Version][Version] |
+| A 8  | Light Quantum | [Download][Light Quantum] | ![Version][Version] |
+
+## Compilation
+
+The `.pdf` files can be built by running `make` in the respective directory:
+
+```bash
+$ make build clean
+```
 
 ## License
 
